@@ -11,17 +11,13 @@
 
   ##### a. Instalación del Servicio DNS 
 
-  ![image-20240319203450720](./assets/image-20240319203450720.png)
+![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/3e29ab93-5d05-4ba3-803b-51a7f71edffe)
 
   *Cambiamos la ip del servidor*
 
-  ![image-20240319203718201](./assets/image-20240319203718201.png)
-
   *Cambiamos el nombre del equipo*
 
-  *(En este caso me cambió el nombre a SERVERVICTORDES porque el que puse es muy largo)*
-
-  ![image-20240319204059885](./assets/image-20240319204059885.png)
+![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/44ba1648-d3c0-406b-91a3-8479298ffb95)
 
 ​	*Agregamos el Servidor DNS*
 
@@ -33,9 +29,7 @@
 
 ​	*Terminada con éxito*
 
-##### 	b. Configuración de Zonas y Registros DNS
-
-​		
+##### 	b. Configuración de Zonas y Registros DNS		
 
 ​	![image-20240319205054916](./assets/image-20240319205054916.png)
 
@@ -43,11 +37,7 @@
 
 
 
-![image-20240319205328155](./assets/image-20240319205328155.png)
-
-​	*Creamos la zona de búsqueda inversa*
-
-![image-20240319205422486](./assets/image-20240319205422486.png)
+![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/d88c3135-3b27-4baf-ac7a-2a8807e8bd4c)
 
 ​	*Zonas creadas*
 
@@ -57,7 +47,7 @@
 
   - server.lalaboral.local -> 172.17.10.10
 
-    ![image-20240319210247061](./assets/image-20240319210247061.png)
+![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/6517f640-b307-4db5-8330-be906b5a2ed4)
 
   - Equipo_Ventas1.lalaboral.local -> 172.17.10.11
 
@@ -85,22 +75,25 @@
 
 - c. Configuración de Zona Inversa:
 
-  - Crear una nueva zona de búsqueda inversa para la red 172.17.10.0.
+ ![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/11530a35-89c9-4a73-b968-0b7b46ca645c)
 
-    ![image-20240319211613338](./assets/image-20240319211613338.png)
-
-    *Nueva zona de busqueda inversa creada*
+![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/ab54c9f7-9995-435c-9b53-a8c915f857c2)
 
   - Agregar registros PTR para asociar las direcciones IP con los nombres de host correspondientes.
 
-    ![image-20240319211920782](./assets/image-20240319211920782.png)
+ ![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/a94fbb95-6bfe-4a3d-8079-6f99be07a35e)
 
-    ![image-20240319211955662](./assets/image-20240319211955662.png)
-
-    
 
 *VERIFICACIÓN*
 
-no va
+![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/d8601137-0d4a-4237-98b5-fa7da8246a71)
 
-![image-20240319234937387](./assets/image-20240319234937387.png)
+*Ponemos la direccion ip dentro del rango 172.17.10.0 y el dns del server*
+
+![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/00f03b08-fd5a-44f2-9c53-a0446867b725)
+
+*Configuramos el archivo /etc/resolv.conf*
+
+![imagen](https://github.com/Musthit/TrabajoActive/assets/100193393/d823a798-c03f-4158-ac2e-92b8b082f061)
+*VERIFICACION CORRECTA*
+
